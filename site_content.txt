@@ -1,0 +1,41 @@
+'<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Время в Москве. Сколько сейчас времени в Москве, Россия</title>
+</head>
+<body>
+...
+	<h2>Точное время восхода и захода солнца в Москве</h2>
+	<div class="level1">
+	Восход солнца: 
+	<span class="short24hm">4:51</span>
+	<span class="short12hm" style="display:none;">4:51 AM</span>
+	<br>Заход солнца: 
+	<span class="short24hm">22:16</span>
+	<span class="short12hm" style="display:none;">10:16 PM</span>
+	<br>Солнце в зените: 
+	<span class="short24hm">13:33</span>
+	<span class="short12hm" style="display:none;">1:33 PM</span>
+	<br>Начало утренней зари (утренних гражданских сумерек): 
+	<span class="short24hm">3:51</span>
+	<span class="short12hm" style="display:none;">3:51 AM</span>
+	<br>Конец вечерней зари (вечерних гражданских сумерек): 
+	<span class="short24hm">23:15</span>
+	<span class="short12hm" style="display:none;">11:15 PM</span>
+	<br>Начало навигационных сумерек: 
+	<span class="short24hm">3:00</span>
+	<span class="short12hm" style="display:none;">3:00 AM</span>
+	<br>Конец навигационных сумерек: 
+	<span class="short24hm">3:00</span>
+	<span class="short12hm" style="display:none;">3:00 AM</span>
+	<br>Начало астрономических сумерек: 
+	<span class="short24hm">3:00</span>
+	<span class="short12hm" style="display:none;">3:00 AM</span>
+	<br>Конец астрономических сумерек: 
+	<span class="short24hm">3:00</span>
+	<span class="short12hm" style="display:none;">3:00 AM</span>
+	<br>Посмотреть <a href="citysunrisesunset.php?id=524901">месячные таблицы времени восхода и захода солнца в Москве</a>
+...
+</body>
+</html>
+'

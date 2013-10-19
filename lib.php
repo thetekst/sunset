@@ -1,15 +1,10 @@
 <?php
-$str = file_get_contents('http://dateandtime.info/ru/city.php?id=524901');
-$pattern = '/Заход солнца: \n\t<span.*>\d{2}:\d{2}/m';
-
-preg_match_sunset($pattern, $str);
-
-function preg_match_sunset($pattern, $str) {
-	if(!empty($pattern) && !empty($str)) {
-		if(preg_match($pattern,$str,$matches)) {
-			$str2 = implode("", $matches);
+function preg_match_sunset($pattern, $response) {
+	if(!empty($pattern) && !empty($response)) {
+		if(preg_match($pattern,$response,$matches)) {
+			$response2 = implode("", $matches);
 			$pattern2 = '/\d{2}:\d{2}/m';
-			if(preg_match($pattern2, $str2, $matches2)) {
+			if(preg_match($pattern2, $response2, $matches2)) {
 				$string_date = implode('', $matches2);
 				$array_hour_and_minute = explode(':', $string_date);
 				if(count($array_hour_and_minute) == 2) {
@@ -27,9 +22,9 @@ function preg_match_sunset($pattern, $str) {
 					$now = time();
 					
 					if($now >= $expired) {
-						echo 'Заход солнца был в '.$string_date.'. Пора бы закрыть окно.';
+						echo '<p>Заход солнца был в <time>'.$string_date.'</time>. Пора бы закрыть окно.</p>';
 					} else {
-						echo 'Заход солнца будут в '.$string_date;
+						echo '<p>Солнце зайдет в <time>'.$string_date.'</time></p>';
 					}
 				}
 			}

@@ -1,3 +1,5 @@
 #Test comment
 AddDefaultCharset utf-8
 RewriteEngine On
+Options Indexes FollowSymLinks
+DirectoryIndex index.php index.html
